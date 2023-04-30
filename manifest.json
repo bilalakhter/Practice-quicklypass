@@ -1,0 +1,32 @@
+{
+    "name" : "Quickly Pass Generator",
+    "description" : "Generate random multiple passwords of different types quickly with clipboard support.",
+    "version" : "1.0",
+    "manifest_version" : 3,
+    "background" : {
+        "service_worker" : "background.js"
+    },
+
+    "permissions" : [
+        "activeTab",
+        "storage",
+        "contextMenus",
+        "clipboardWrite",
+        "clipboardRead",
+        "notifications",
+        "identity",
+        "identity.email"
+        
+    ],
+
+    "action" : {
+        "default_icon" : {
+            "16" : "/assets/icon16.png",
+            "32" : "/assets/icon32.png",
+            "48" : "/assets/icon48.png"
+        },
+        "default_title" : "Quickly Pass Generator",
+        "default_popup" : "index.html"
+    }
+
+}
